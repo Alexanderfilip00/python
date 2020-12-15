@@ -76,7 +76,6 @@ def to_infix(s):
 			znaky.append(" ) ")
 			
 		else:
-
 			znaky.append(i)
 	
 	for j in znaky:
@@ -85,41 +84,49 @@ def to_infix(s):
 	return to_ret
 
 
-def to_postfix()
+def to_postfix(s):
 
+	znaky=[]
+	to_ret=""
+	znamienka=[]
 
+	
+	for i in ( s.split() ):
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		if i == ")":
+			znaky.append(znamienka.pop())
+		elif i == "(":
+			pass	
+		elif i == '+' or i == '-' or i == '*' or i == '/':
+			znamienka.append(i)
+		else:
+			znaky.append(i)
+	
+		
+	for j in znaky:
+		to_ret = to_ret + j + " "
+		
+	to_ret = to_ret[:-1]
+		
+	return to_ret
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 
 
